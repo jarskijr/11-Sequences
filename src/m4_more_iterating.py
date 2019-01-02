@@ -35,7 +35,7 @@ import math
 def main():
     """ Calls the   TEST   functions in this module. """
     run_test_sum_sequence()
-    # run_test_count_items_bigger_than()
+    run_test_count_items_bigger_than()
     # run_test_count_positive_sines()
     # run_test_sum_first_n()
 
@@ -365,11 +365,11 @@ def run_test_count_items_bigger_than():
     print('  to see whether or not that seems to be true')
     print('  for your code (and Python\'s pseudo-random numbers).')
 
-    # TODO 4 (continued):  Add your 2 ADDITIONAL tests here:
+    # DONE 4 (continued):  Add your 2 ADDITIONAL tests here:
     # Test 9:
     sequence = [45, 84, 32, 70, -10, 40]
     threshold = 40
-    expected = 2
+    expected = 3
     actual = count_items_bigger_than(sequence, threshold)
     print()
     print('Test 9 expected:', expected)
@@ -425,7 +425,7 @@ def count_items_bigger_than(numbers, threshold):
       :type threshold: float
     """
     # -------------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # DONE: 5. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     # -------------------------------------------------------------------------
 
