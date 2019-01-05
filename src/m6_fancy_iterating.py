@@ -14,8 +14,8 @@ is different from:
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
-         and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and Jacob Jarski.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import rosegraphics as rg
 
@@ -49,10 +49,10 @@ def main():
     #        RE-commenting out the previous test if you wish.
     # -------------------------------------------------------------------------
 
-    run_test_print_all_items_forwards(sequence1, sequence2, sequence3,
-                                      sequence4)
-    # run_test_print_all_items_backwards(sequence1, sequence2, sequence3,
-    #                                    sequence4)
+    #run_test_print_all_items_forwards(sequence1, sequence2, sequence3, sequence4)
+
+    run_test_print_all_items_backwards(sequence1, sequence2, sequence3,
+                                    sequence4)
     # run_test_print_items_at_odd_indices(sequence1, sequence2, sequence3,
     #                                     sequence4)
     # run_test_print_items_in_second_half(sequence1, sequence2, sequence3,
@@ -356,6 +356,8 @@ def run_test_print_items_that_are_odd_integers(sequence1, sequence2, sequence3,
 # Iterating through the ENTIRE sequence, FORWARDs.
 ###############################################################################
 def print_all_items_forwards(sequence):
+    for item in sequence:
+        print(item)
     """
     Prints the items in the given sequence in the order that
     they appear, that is, forwards.  Prints them one item per line.
@@ -368,7 +370,7 @@ def print_all_items_forwards(sequence):
        Point at (90, 25)
     """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
 
@@ -377,6 +379,9 @@ def print_all_items_forwards(sequence):
 # Iterating through the ENTIRE sequence, BACKWARDs.
 ###############################################################################
 def print_all_items_backwards(sequence):
+    length = len(sequence)
+    for k in range(length - 1, -1, -1):
+        print(sequence[k])
     """
     Prints the items in the given sequence in the REVERSE of the order
     in which they appear, that is, prints them in backwards order.
